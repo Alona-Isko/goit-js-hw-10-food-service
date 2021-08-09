@@ -11,8 +11,8 @@ module.exports=[{id:"XWaQXcbk0",name:"Картофель, запеченный �
 },{}],"i0CD":[function(require,module,exports) {
 "use strict";var e=u(require("../templates/menu-items.hbs")),t=u(require("../menu.json"));function u(e){return e&&e.__esModule?e:{default:e}}const n=(0,e.default)(t.default),r=document.querySelector(".js-menu");r.insertAdjacentHTML("beforeend",n);
 },{"../templates/menu-items.hbs":"DO4D","../menu.json":"mA8c"}],"qwQt":[function(require,module,exports) {
-const e={LIGHT:"light-theme",DARK:"dark-theme"};
+const e={LIGHT:"light-theme",DARK:"dark-theme"},t=document.querySelector("#theme-switch-toggle");function c(){t.checked?o():d()}function o(){document.body.classList.add(e.DARK),document.body.classList.remove(e.LIGHT),localStorage.setItem("theme",e.DARK),t.checked=!0}function d(){document.body.classList.add(e.LIGHT),document.body.classList.remove(e.DARK),localStorage.setItem("theme",e.LIGHT),t.checked=!1}function n(){const t=localStorage.getItem("theme");t===e.LIGHT||null===t?d():o()}t.addEventListener("change",c),n();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.css"),require("./js/menu"),require("./js/theme");
 },{"./styles.css":"Tnu0","./js/menu":"i0CD","./js/theme":"qwQt"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.5279c055.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.503902c7.js.map
